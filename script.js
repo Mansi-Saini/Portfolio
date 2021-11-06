@@ -26,7 +26,7 @@ function onMouseEnter(){
 }
 
 let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-console.log(width)
+
 var slideIndex = 1;
 if (width >= 750){
   showSlides(slideIndex);
