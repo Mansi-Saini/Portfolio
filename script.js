@@ -32,7 +32,7 @@ if (width >= 750){
   showSlides(slideIndex);
 }
 else{
-  showSlidesResponsive(x, slideIndex)
+  showSlidesResponsive(slideIndex)
 }
 
 function plusSlides(n) {
@@ -40,7 +40,7 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
   }
   else{
-    showSlidesResponsive(x, slideIndex += n)
+    showSlidesResponsive(slideIndex += n)
   } 
 }
 
@@ -49,11 +49,11 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
   }
   else{
-    showSlidesResponsive(x, slideIndex = n)
+    showSlidesResponsive(slideIndex = n)
   }
 }
 
-function showSlidesResponsive(x, n){
+function showSlidesResponsive(n){
   var i;
   var slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {slideIndex = 1} 
