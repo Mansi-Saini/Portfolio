@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.hfont{
+    font-family: 'Rubik', sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(185, 211, 160, 0.5);
+    height: 7vh;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+}
+
+nav .links{
+    margin: 1em;
+}
+
+#introPhoto{
+    width:  2.5vw;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 0.2em;
+    font-size: 1em;
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+}
+
+nav .head a{
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+nav h1{
+    font-size: 2.5em;    
+    font-family: 'Satisfy', cursive;
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+main{
+    min-height: calc(100vh - 6vh - 7vh);
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+}
+
+.home .content{
+    padding: 20vw 10vw 0 5vw;
+    float: left;
+}
+
+.home .content p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.home .photo{
+    float: right;
+}
+
+.home .photo img{
+    padding: 10vw 10vw 0 10vw;
+    width: 25vw;
+}
+
+.home .content h1{
+    color: rgb(65, 92, 40);
+    font-size: 3em;
+    font-family: 'Kalam', cursive;
+    
+}
+
+#About{
+    display: grid;
+    grid-row-gap:0;
+    height: 90vh;
+    padding: 0 5em 0 11em;
+    grid-template-columns: 30vw 22vw auto;
+}
+
+#About h1{
+    text-align: center;
+    align-self:center;
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: rgb(65, 92, 40);
+}
+
+#About fieldset{
+    text-align: center;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(16, 110, 74);
+    border-radius: 10px;
+    padding: 1em;
+    width: max-content;
+}
+
+#About .Photo{
+    justify-self:center;
+    align-self: start; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    width: 24vw;
+    padding: 1em 0;
+    margin: 0;
+}
+
+#About img{
+    width: 20vw;
+    /* height: 40vh; */
+}
+#About .aboutMe{
+    width: 40vw;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#About .contact{
+    width: 18vw;
+    align-self: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#About .contact a{
+    color: black;
+    text-decoration: none;
+}
+
+#About .personal{
+    width: 18vw;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#About legend{
+    padding: 3px 6px;
+    margin: 0 40px;
+    font-size: 1.3em;
+    color: rgb(16, 110, 74);
+    font-weight: bold;
+}
+
+#About fieldset p{
+    font-size: 1em;
+    font-family: 'Barlow', sans-serif;
+}
+
+#Edu{
+    height: 220vh;
+    width: 100vw;
+}
+
+#Edu .heading{
+    text-align: center;
+    font-size: 3em;
+    padding: 4.5vw 0 5vw 0;
+    color: rgb(65, 92, 40);
+    
+}
+
+#Edu .Edumain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Edu .info h1{
+    font-size: x-large;
+    color: rgb(104, 143, 103);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+#Edu .EduPh img{
+    padding: 0 5vw;
+    width: 25vw;
+}
+
+#Edu .info{
+    padding: 0 10vw 0 10vw;
+}
+
+#Edu .info div{
+    padding: 2vh 0;
+}
+
+ #Edu .info p{
+     padding: 0 0 0 2vw;
+     font-family: 'Barlow', sans-serif;
+    }
+
+ #Edu .certi{
+     display: flex;
+     margin: 0 10em;
+ }
+
+ #Edu .certi .prev, .next {
+    cursor: pointer;
+    width: auto;
+    height: max-content;
+    padding: 16px;
+    margin-top: 1.5em;
+    color: rgb(51, 19, 19);
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    border-radius: 1px 4px 4px 1px;
+    user-select: none;
+  }
+
+  #Edu .certi .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  #Edu .certi .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+ #Edu .certi img{
+     width: 20vw;
+     height: 30vh;
+ }
+
+ #Edu .certi .container {
+    position: relative;
+    width: 20vw;
+     height: 30vh;
+     margin: 0 2em;
+  }
+  
+  #Edu .certi .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(147, 207, 141, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  #Edu .certi .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  #Edu .certi  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 0.8em;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+  }
+
+  #Edu .Skillmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+#Edu .Skillmain fieldset img{
+    width: 4vw;
+    display: inline;
+}
+
+#Edu .Skillmain fieldset p{
+    display: inline-block;
+
+}
+
+#About fieldset{
+    text-align: center;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(16, 110, 74);
+    border-radius: 10px;
+    padding: 1em;
+    width: max-content;
+} 
+#Edu .Skillmain fieldset{
+    /* text-align: center; */
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(16, 110, 74);
+    border-radius: 10px;
+    padding: 1em;
+    width: max-content;
+    margin: 4vw;
+    align-items: center;
+    /* display: inline; */
+}
+
+#Edu .Skillmain legend{
+    margin: 0 50px;
+    font-size: 1em;
+    color: rgb(16, 110, 74);
+    font-weight: bold;
+}
+
+#Edu .Skillmain fieldset p{
+    font-size: 0.8em;
+    font-family: 'Barlow', sans-serif;
+}
+/* #Edu .Skillmain .contain {
+    width: 40vw;
+    background-color: #c0e5d8;
+  }
+  
+  #Edu .Skillmain .skills {
+    text-align: right;
+    padding-top: 10px;
+    color: white;
+  }
+  
+  #Edu .Skillmain .info .sk{
+    padding: 2vh 0;
+}
+
+  #Edu .Skillmain .html {width: 90%; background-color: #04aa6d;}
+  #Edu .Skillmain .css {width: 80%; background-color: #04aa6d;}
+  #Edu .Skillmain .js {width: 65%; background-color: #04aa6d;}
+  #Edu .Skillmain .php {width: 85%; background-color: #04aa6d;} */
+
+#Feedback{
+    height: 80vh;
+}
+
+#Feedback img{
+    width: 40vw;
+}
+
+#Feedback .heading{
+    text-align: center;
+    font-size: 3em;
+    padding: 0 0 5vw 0;
+    color: rgb(65, 92, 40);
+}
+
+#Feedback .fbmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Feedback .fbmain .form{
+    padding: 0 10vw;
+}
+
+#Feedback .fbmain .form #bt{
+    width: 4vw;
+    height: 4vh;
+}
+
+footer{
+    height: 8vh;
+    background-color: rgb(185, 211, 160, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
